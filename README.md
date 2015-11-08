@@ -33,11 +33,12 @@
 </ul>
 </p>
 <p>
+<h2>Credits</h2>
 <ul>
-<li><h4>Gabriel Mayta - <i>Frontend / Backend Developer</i></h4></li>
-<li><h4>Mario Brito - <i>Backend Developer</i></h4></li>
-<li><h4>Lorenzo Veneziani - <i>Web Designer</i></h4></li>
-<li><h4>Sebastian Cardenas - <i>Frontend Developer</i></h4></li>
-<li><h4>Nello Sica - <i>Custom HTML</i></h4></li>
+<li><a>Gabriel Mayta</a> - <i>Frontend / Backend Developer</i></li>
+<li><a>Mario Brito</a> - <i>Backend Developer</i></li>
+<li><a>Lorenzo Veneziani</a> - <i>Web Designer</i></li>
+<li><a>Sebastian Cardenas</a> - <i>Frontend Developer</i></li>
+<li><a>Nello Sica</a> - <i>Custom HTML</i></li>
 </ul>
 </p>
