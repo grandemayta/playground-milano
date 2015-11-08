@@ -32,3 +32,12 @@
 </li>
 </ul>
 </p>
+<p>
+<ul>
+<li><h4>Gabriel Mayta - <i>Frontend / Backend Developer</i></h4></li>
+<li><h4>Mario Brito - <i>Backend Developer</i></h4></li>
+<li><h4>Lorenzo Veneziani - <i>Web Designer</i></h4></li>
+<li><h4>Sebastian Cardenas - <i>Frontend Developer</i></h4></li>
+<li><h4>Nello Sica - <i>Custom HTML</i></h4></li>
+</ul>
+</p>
