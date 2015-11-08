@@ -1,0 +1,88 @@
+/* ------------------------------------------SETTINGS LINGUA--------------------------------- */
+
+#NamespaceSettings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+
+.flag {
+    width: 100%;
+    height: 100%;
+}
+
+.flag p {
+    font-size: 18px;
+}
+
+/*
+.flag img
+{
+    width: auto;
+    height: 64px;
+        background: #25FF00;
+    position: absolute;
+
+    margin-top: 50px;
+}
+*/
+
+/* ------------------------------------------SETTINGS INFO --------------------------------- */
+
+#NamespaceSettingsInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    /*background: #0c0c14;*/
+    overflow: hidden;
+}
+
+#NamespaceSettingsInfo h3 {
+    font-size: 20px;
+}
+
+.sfondo-info {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -156px;
+    margin-left: -125px;
+}
+
+.sfondo-info img {
+    width: auto;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+    margin-left: -50px;
+}
+
+.info-sviluppatori {
+    width: 250px;
+    height: auto;
+    /*    background: #25FF00;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 185px;
+    margin-left: -125px;
+}
+
+.ttl-main-title {
+    text-align: center;
+    font-size: 25px;
+}

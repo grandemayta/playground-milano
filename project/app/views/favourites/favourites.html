@@ -1,0 +1,33 @@
+<div id="NamespaceFavourites"
+     define-area type-area="withHeader"
+     ng-class="{'background-alternative' : favourites.length > 0}"
+     class="withHeader scrollable-area">
+
+    <div ng-if="favourites.length > 0" class="spacer-20"></div>
+    <div ng-if="favourites.length > 0" ng-repeat="favourite in favourites" class="box-playgrounds">
+        <div style="background-image: url('{{favourite.image}}');"
+             ng-class="{'no-background-image':!favourite.image}"
+             class="box-playground-image">
+            <i ng-click="removePlayground(userData.id, favourite.id, $index)"
+               class="box-playground-icons icon-trash-bin-1"></i>
+            <i style="display: none;" class="box-playground-icons icon-car"></i>
+            <i ng-click="goToCheckin(favourite.id)" class="box-playground-icons icon-check-mark-3"></i>
+            <i ng-click="goToPlayground(favourite.id)" class="box-playground-icons icon-basketball"></i>
+        </div>
+        <div ng-click="goToPlayground(favourite.id)" ng-bind="favourite.name" class="box-playground-title"></div>
+    </div>
+
+    <div ng-if="favourites.length === 0">
+        <div class="no-data-content">
+            <div class="no-data-content-icon icon-heart-small"></div>
+            <div class="no-data-content-message">
+                Non hai ancora aggiunto nessun campo tra i tuoi preferiti
+            </div>
+        </div>
+        <div class="spacer-20"></div>
+        <button ui-sref="playgrounds.list" class="btn-playground btn-small">
+            Lista dei campi
+        </button>
+    </div>
+
+</div>

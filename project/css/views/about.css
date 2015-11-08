@@ -1,0 +1,22 @@
+#NamespaceAbout figure {
+    position: relative;
+    left: 50%;
+    clear: left;
+    float: left;
+    width: 140px;
+    height: 140px;
+    margin-left: -70px;
+    background-image: url('../../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.peruviano-stretto {
+    clear: left;
+    float: left;
+    color: #280a50;
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'robotobold';
+}

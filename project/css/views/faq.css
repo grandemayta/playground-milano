@@ -1,0 +1,79 @@
+.intestazione_faq {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 30px;
+}
+
+/* MENù FAQ*/
+
+.faq {
+    display: block;
+    width: 100%;
+    list-style: none;
+}
+
+.faq li {
+    display: block;
+    border-top: 1px solid #e8e8e8;
+}
+
+.faq li p {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 40px;
+    font-size: 17px;
+}
+
+.faq .header-icon-arrow {
+    position: absolute;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    padding-top: 9px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #280a50;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.ultimo {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+/* GRAFICA DOMANDA SINGOLA*/
+
+.domanda {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.risposta {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+
+    /*    border: 1px solid red;*/
+}
+
+.risposta p {
+    font-size: 18px;
+    text-align: justify;
+    word-break: -1px;
+}
+
+

@@ -1,0 +1,12 @@
+<div id="full-page" class="background-social" ng-controller="MenuController">
+
+    <div ui-view></div>
+
+    <!-- SPINNER -->
+    <spinner ng-if="toggleSpinner"></spinner>
+    <!-- OVERLAY -->
+    <div ng-class="(toggleSpinner || toggleModal) ? 'open-overlay' : 'close-overlay'" class="overlay"></div>
+    <!-- MODAL -->
+    <modal ng-class="toggleModal ? 'open-modal' : 'close-modal'"></modal>
+
+</div>

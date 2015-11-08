@@ -1,0 +1,14 @@
+<div define-area type-area="withHeader" class="withHeader scrollable-area background-alternative">
+    <div class="spacer-10"></div>
+
+    <div ng-repeat="playground in playgrounds" class="box-playgrounds">
+        <div style="background-image: url('{{playground.image}}');"
+             ng-class="{'no-background-image':!playground.image}"
+             class="box-playground-image">
+            <i style="display: none" class="box-playground-icons icon-car"></i>
+            <i ng-if="IS_AUTH" ng-click="goToCheckin(playground.id)" class="box-playground-icons icon-check-mark-3"></i>
+            <i ng-click="goToPlayground(playground.id)" class="box-playground-icons icon-basketball"></i>
+        </div>
+        <div ng-click="goToPlayground(playground.id)" ng-bind="playground.name" class="box-playground-title"></div>
+    </div>
+</div>

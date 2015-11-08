@@ -1,0 +1,93 @@
+/*MAIN ACCESS*/
+.background-social {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: auto;
+}
+
+#NamespaceAccessMain .login-buttons-center {
+    position: absolute;
+    width: 100%;
+    bottom: 24px;
+}
+
+#NamespaceAccessMain figure {
+    position: relative;
+    left: 50%;
+    clear: left;
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-left: -60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#NamespaceAccessMain .btn-icon {
+    float: left;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    font-size: 30px;
+    padding-top: 6px;
+    text-align: center;
+    border-right: 1px solid #a8a8a8;
+}
+
+#NamespaceAccessMain .btn-xxl {
+    text-align: left;
+}
+
+#NamespaceAccessMain h1, #NamespaceLogin h1, #NamespaceRegistration h1 {
+    position: relative;
+    clear: left;
+    float: left;
+    width: 100%;
+    height: 44px;
+    font-family: 'robotobold';
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+}
+
+#NamespaceAccessMain h1 {
+    font-size: 30px !important;
+    letter-spacing: 2px;
+}
+
+#NamespaceAccessMain h4, #NamespaceLogin h4 {
+    clear: left;
+    float: left;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/*LOGIN*/
+#NamespaceLogin .iptxxl, #NamespaceRegistration .iptxxl {
+    padding-left: 14px;
+    padding-right: 40px;
+}
+
+.access-background {
+    background: #280a50;
+}
+
+#NamespaceRegistration .iptLarge {
+    padding: 0 40px 0 10px;
+}
+
+#NamespaceRegistration .iptLarge-icon {
+    margin-left: 210px;
+}

@@ -1,0 +1,75 @@
+.card-checkin-playground-image {
+    clear: left;
+    float: left;
+    width: 100%;
+    height: 220px;
+    background-color: #d0d0d0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-checkin-playground-name {
+    clear: left;
+    float: left;
+    width: 100%;
+    height: 40px;
+    margin-top: 180px;
+    padding-left: 10px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.ipt-datepicker {
+    clear: left;
+    float: left;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px 0 10px;
+    font-size: 16px;
+    background: #f0f0f0;
+}
+
+.datepicker-over-open {
+    position: relative;
+    z-index: 10;
+    clear: left;
+    float: left;
+    width: 100%;
+    height: 40px;
+    margin-top: -40px;
+    padding-right: 10px;
+    text-align: right;
+    line-height: 46px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.0003);
+}
+
+.select-time {
+    position: relative;
+    z-index: 20;
+    float: left;
+    width: 80px;
+    height: 40px;
+    margin-left: -80px;
+    margin-right: 20px;
+    padding: 0 10px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.0003);
+    border-radius: 0;
+}
+
+.select-time-arrow {
+    position: relative;
+    z-index: 10;
+    float: left;
+    width: 80px;
+    height: 40px;
+    line-height: 46px;
+    padding-right: 10px;
+    font-size: 20px;
+    text-align: right;
+    background: #f0f0f0;
+}

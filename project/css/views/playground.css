@@ -1,0 +1,352 @@
+#NamespacePlayground figure {
+    clear: left;
+    float: left;
+    width: 100%;
+    height: 220px;
+    background-color: #686868;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#NamespacePlayground .figure-item-content {
+    position: relative;
+    clear: left;
+    float: right;
+    z-index: 10;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6)
+}
+
+.playground-heart {
+    float: left;
+    height: 40px;
+}
+
+.playground-heart i {
+    float: left;
+    margin-left: 10px;
+    padding-top: 8px;
+    font-size: 22px;
+    color: #b8b8b8;
+}
+
+.playground-heart b {
+    float: left;
+    margin-left: 4px;
+    line-height: 40px;
+    color: #b8b8b8;
+}
+
+#NamespacePlayground .playground-bookmarks {
+    float: right;
+    width: 40px;
+    height: 40px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 22px;
+    color: #b8b8b8;
+}
+
+#NamespacePlayground .ttl-main-title {
+    text-align: left !important;
+    font-size: 22px !important;
+}
+
+#NamespacePlayground .amenities-icon-box {
+    clear: left;
+    float: left;
+    width: 100%;
+}
+
+#NamespacePlayground .amenity-row {
+    float: left;
+    width: 100%;
+    height: 40px;
+    margin: 1px 0;
+    padding: 0 10px;
+    line-height: 40px;
+    background: #f0f0f0;
+    border-radius: 3px;
+}
+
+#NamespacePlayground .amenity-row i {
+    float: left;
+    margin-right: 10px;
+    line-height: 40px;
+}
+
+#NamespacePlayground .amenity-row span {
+    float: left;
+}
+
+#NamespacePlayground .amenity-row b {
+    float: right;
+    width: 26px;
+    height: 26px;
+    margin-top: 8px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: #00fa9a;
+    border-radius: 50%;
+}
+
+/* CHECKIN */
+
+.card-group-by-content {
+    clear: left;
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.card-group-by-content-left {
+    clear: left;
+    float: left;
+    margin-left: 10px;
+    padding: 10px 0;
+}
+
+.card-group-by-content-right {
+    float: right;
+    margin-right: 10px;
+    padding: 10px 0;
+}
+
+.card-group-by-content-left-date {
+    float: left;
+    margin-left: 10px;
+    color: #280a50;
+}
+
+.card-group-by-content-right-icon, .card-group-by-content-left-icon {
+    clear: left;
+    float: left;
+    font-size: 16px;
+    color: #280a50;
+}
+
+.card-group-by-content-right-number {
+    float: left;
+    color: #280a50;
+}
+
+.card-three-col {
+    clear: left;
+    float: left;
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.card-three-col-image {
+    clear: left;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-color: #d0d0d0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.card-three-col-icon {
+    float: right;
+    width: 30px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.card-three-col-data {
+    display: block;
+    padding: 0 10px;
+    overflow: auto;
+}
+
+.card-three-col-data-label {
+    clear: left;
+    float: left;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.card-three-col-data-date {
+    clear: left;
+    float: left;
+}
+
+.card-three-col-icon-toolbar {
+    display: table-cell;
+    vertical-align: middle;
+    width: 30px;
+    height: 60px;
+    color: #280a50;
+    text-align: center;
+}
+
+.card-two-col-toolbar {
+    margin-top: 40px !important;
+}
+
+.card-three-col-toolbar {
+    position: absolute;
+    right: 10px;
+    width: 100px;
+    margin-top: -16px;
+    padding: 10px 0;
+    background: #f0f0f0;
+    box-shadow: 0 0 3px #c0c0c0;
+    overflow: hidden;
+}
+
+.card-three-col-toolbar-label {
+    clear: left;
+    float: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.panel-comment {
+    position: relative;
+    z-index: 50;
+    clear: left;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: auto;
+}
+
+.textarea-for-comment {
+    clear: left;
+    float: left;
+    width: 90%;
+    height: 160px;
+    margin: 0 5%;
+    padding: 10px;
+    background: #e8e8e8;
+    resize: none;
+    overflow: auto;
+}
+
+.panel-comment .btn-inline-button {
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.comment-dim-content {
+    clear: left;
+    float: left;
+    width: 100%;
+    height: 60px;
+}
+
+.comment-dim-content-label {
+    clear: left;
+    float: left;
+    margin-top: 18px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: 'robotobold';
+}
+
+.comment-dim-content-count {
+    float: right;
+    width: 70px;
+    height: 30px;
+    margin-top: 14px;
+    padding-right: 10px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    text-align: right;
+    background: #280a50;
+}
+
+.listview-two-column {
+    clear: left;
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+    background: #fff;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.listview-two-column-image {
+    clear: left;
+    float: left;
+    width: 70px;
+    height: 100%;
+}
+
+.listview-two-column-image figure {
+    clear: left;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: #d0d0d0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.listview-two-column-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.listview-two-column-content-labeldate {
+    clear: left;
+    float: left;
+    width: 90%;
+}
+
+.listview-three-column-content-options {
+    float: right;
+    width: 10%;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #280a50;
+}
+
+.listview-two-column-content-label, .listview-two-column-content-date {
+    display: block;
+    float: left;
+    width: 100%;
+    color: #280a50;
+}
+
+.listview-two-column-content-label {
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+
+.listview-two-column-content-date {
+    font-size: 12px;
+}
+
+.listview-two-column-content-comment {
+    clear: left;
+    float: left;
+    width: 100%;
+    padding-top: 4px;
+}

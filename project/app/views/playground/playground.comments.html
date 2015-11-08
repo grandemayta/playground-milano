@@ -1,0 +1,87 @@
+<div id="NamespaceComments" define-area type-area="withHeaderTabButton" class="withHeaderTabButton scrollable-area">
+
+    <div ng-if="!toggleCommentPanelStatus && playgroundComments.length > 0"
+         ng-repeat="comment in playgroundComments"
+         ng-class="{'no-border-bottom': $last}"
+         class="listview-two-column">
+        <div class="listview-two-column-image">
+
+            <figure ng-if="!comment.id_user.image"
+                 class="header-profile no-image">
+            </figure>
+            <figure ng-if="comment.id_user.image"
+                 style="background-image: url({{comment.id_user.image}})"
+                 class="header-profile">
+            </figure>
+
+        </div>
+        <div class="listview-two-column-content">
+            <div class="listview-two-column-content-labeldate">
+                <div class="listview-two-column-content-label" ng-bind="comment.id_user.fullname"></div>
+                <div class="listview-two-column-content-date" ng-bind="comment.createdAt | date"></div>
+            </div>
+            <div ng-if="userData.id === comment.id_user.id" ng-click="commentToolbar($index)" class="listview-three-column-content-options icon-more-option"></div>
+            <div ng-show="userData.id === comment.id_user.id && comment.toolbarStatus" class="card-three-col-toolbar card-two-col-toolbar">
+                <div ng-click="editMyComment(comment.id, comment.comment, $index)" class="card-three-col-toolbar-label">Modifica</div>
+                <div ng-click="removeMyComment($index, comment.id)" class="card-three-col-toolbar-label no-margin-bottom">Elimina</div>
+            </div>
+            <div class="listview-two-column-content-comment" ng-bind="comment.comment"></div>
+        </div>
+    </div>
+
+    <div ng-if="!toggleCommentPanelStatus && playgroundComments.length === 0">
+        <div class="no-data-content">
+            <div class="no-data-content-icon icon-talk-chat"></div>
+            <div ng-if="IS_AUTH" class="no-data-content-message">
+                vuoi essere il primo a lasciare un commento?
+            </div>
+            <div ng-if="!IS_AUTH" class="no-data-content-message">
+                Non sono presenti commenti, registrati e lascia il primo commento
+            </div>
+        </div>
+    </div>
+
+    <div ng-show="IS_AUTH && toggleCommentPanelStatus" style="height: {{DEVICE.withHeaderTabButton}}px;" class="panel-comment">
+        <div class="comment-dim-content">
+            <div class="comment-dim-content-label">Lascia il tuo commento</div>
+            <div class="comment-dim-content-count">{{userComment.length}} / 400</div>
+        </div>
+        <textarea ng-model="userComment"
+                  maxlength="400"
+                  class="textarea-for-comment"
+                  placeholder="Lascia il tuo commento qui...">
+        </textarea>
+    </div>
+
+</div>
+
+<div ng-if="IS_AUTH && toggleCommentPanelStatus" class="btn-inline-button">
+    <button ng-click="toggleCommentPanel()" class="btn-small-left-inline btn-gray">
+        Annulla
+    </button>
+    <button ng-if="playgroundComments.length > 0 && userHasComment" ng-click="updateUserComment(userComment)"
+            ng-disabled="(userComment.length === 0 || userComment.length > 400) ? true : false"
+            class="btn-small-right-inline btn-playground">
+        Commenta
+    </button>
+    <button ng-if="playgroundComments.length > 0 && !userHasComment" ng-click="saveUserComment(userComment)"
+            ng-disabled="(userComment.length === 0 || userComment.length > 400) ? true : false"
+            class="btn-small-right-inline btn-playground">
+        Commenta
+    </button>
+    <button ng-if="playgroundComments.length === 0" ng-click="saveUserComment(userComment)"
+            ng-disabled="(userComment.length === 0 || userComment.length > 400) ? true : false"
+            class="btn-small-right-inline btn-playground">
+        Commenta
+    </button>
+</div>
+
+<button ng-if="IS_AUTH && !userHasComment && !toggleCommentPanelStatus"
+        ng-click="toggleCommentPanel()"
+        class="btn-fixed-bottom btn-playground">
+    Lascia il tuo commento
+</button>
+
+<button ng-if="!IS_AUTH && !toggleCommentPanelStatus" ui-sref="access.social" class="btn-fixed-bottom btn-playground">
+    Registrati e lascia un commento
+</button>

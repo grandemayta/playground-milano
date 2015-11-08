@@ -1,0 +1,25 @@
+<div id="NamespaceAccessMain" class="no-background">
+
+    <div class="logo-center"></div>
+
+    <div class="login-buttons-center">
+        <div class="margin-lateral">
+            <button ng-click="loginWithFacebook()" class="btn-xxl btn-blue">
+                <i class="btn-icon icon-facebook"></i>
+                {{'ENTER_WITH_FACEBOOK' | translate}}
+            </button>
+            <div class="spacer-10"></div>
+            <button ui-sref="access.login" class="btn-xxl btn-white">
+                <i class="btn-icon icon-basketball"></i>
+                {{'ENTER_WITH_PLAYGROUND' | translate}}
+            </button>
+            <div class="spacer-10"></div>
+            <button ui-sref="access.registration" class="btn-xxl btn-red">
+                <i class="btn-icon icon-basketball"></i>
+                {{'REGISTRATION_WITH_PLAYGROUND' | translate}}
+            </button>
+            <div class="spacer-20"></div>
+        </div>
+        <h4 ng-bind="'ENTER_WITHOUT_REGISTRATION' | translate" ui-sref="playgrounds.map"></h4>
+    </div>
+</div>

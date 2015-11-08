@@ -1,0 +1,113 @@
+/*ACCORDION*/
+accordion, accordion-text {
+    clear: left;
+    float: left;
+    width: 100%;
+}
+
+.accordion-header, .accordion-text-header {
+    clear: left;
+    float: left;
+    width: 100%;
+    color: #fff;
+}
+
+.accordion-header {
+    height: 38px;
+    line-height: 38px;
+    padding: 0 10px;
+    background: #e53b2c;
+}
+
+.accordion-text-header {
+    height: 30px;
+    line-height: 30px;
+    background: #f0f0f0;
+    border-radius: 3px;
+}
+
+.accordion-content {
+    clear: left;
+    float: left;
+    width: 100%;
+    padding: 0 4px;
+    max-height: 0;
+    font-size: 14px;
+    background: #fff;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.accordion-text-content {
+    clear: left;
+    float: left;
+    width: 100%;
+   /* height: 135px;*/
+    overflow: hidden;
+}
+
+.accordion-custom-icon {
+    float: left;
+    width: 20px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.accordion-title {
+    float: left;
+    margin-left: 4px;
+}
+
+.accordion-text-title {
+    clear: left;
+    float: left;
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+
+.accordion-arrow-icon {
+    float: right;
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.open, .close, .openAccText, .closeAccText, .rotate-up, .rotate-down {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.open {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.close {
+    opacity: 0;
+    max-height: 0;
+}
+
+.openAccText {
+    height: auto;
+}
+
+.closeAccText {
+    height: 135px;
+}
+
+.rotate-up {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.rotate-down {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}

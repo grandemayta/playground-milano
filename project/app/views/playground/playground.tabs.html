@@ -1,0 +1,23 @@
+<tabs class="swiper-container">
+    <!-- TAB NAVIGATION -->
+    <ul id="tabs-navigation" class="tabs-number-3">
+        <li><i ng-click="changeTab(0)" class="icon-basketball active-tab"></i></li>
+        <li><i ng-click="changeTab(1)" class="icon-check-mark-3" style="padding-top:10px;font-size:22px;"></i></li>
+        <li><i ng-click="changeTab(2)" class="icon-talk-chat" style="padding-top:12px;font-size:20px;"></i></li>
+    </ul>
+    <!-- TAB CONTENT -->
+    <div class="swiper-wrapper">
+        <!-- TAB1 -->
+        <div class="swiper-slide">
+            <load-template url="../views/playground/playground.home.html"></load-template>
+        </div>
+        <!-- TAB2 -->
+        <div class="swiper-slide" ng-controller="PlaygroundCheckinsController">
+            <load-template url="../views/playground/playground.checkins.html"></load-template>
+        </div>
+        <!-- TAB3 -->
+        <div class="swiper-slide" ng-controller="PlaygroundCommentsController">
+            <load-template url="../views/playground/playground.comments.html"></load-template>
+        </div>
+    </div>
+</tabs>

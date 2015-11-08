@@ -1,0 +1,91 @@
+modal {
+    position: absolute;
+    z-index: 410;
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    height: auto;
+    margin-left: -140px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 3px #606060;
+}
+
+modal .modal-body {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
+}
+
+modal .modal-body p {
+    clear: left;
+    float: left;
+    width: 90%;
+    margin: 10px 5%;
+    font-size: 16px;
+    text-align: center;
+}
+
+modal .modal-body button {
+    position: relative;
+    left: 50%;
+    clear: left;
+    float: left;
+    width: 230px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: -115px;
+    padding-left: 45px;
+    text-align: left;
+    border-radius: 2px;
+}
+
+modal .modal-body .default-btn {
+    text-align: center;
+    padding-left: 0;
+}
+
+modal .modal-body .button-icons {
+    position: relative;
+    z-index: 10;
+    clear: left;
+    float: left;
+    margin-top: -39px;
+    margin-left: 38px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.modal-icon-playground {
+    font-size: 22px !important;
+    margin-top: -40px !important;
+}
+
+modal .close-icon {
+    position: absolute;
+    right: 0;
+    clear: left;
+    float: right;
+    width: 34px;
+    height: 34px;
+    line-height: 42px;
+    margin-top: -14px;
+    margin-right: -14px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    background: #e53b2c;
+    border-radius: 50%;
+}
+
+.open-modal {
+    opacity: 1;
+    z-index: 400;
+}
+
+.close-modal {
+    opacity: 0;
+    z-index: -400;
+}

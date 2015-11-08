@@ -1,0 +1,41 @@
+#tabs-navigation {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    background: #280a50;
+}
+
+#tabs-navigation li {
+    display: inline;
+}
+
+#tabs-navigation li i {
+    display: block;
+    float: left;
+    height: 40px;
+    padding-top: 8px;
+    font-size: 24px;
+    text-align: center;
+    font-style: normal;
+    color: #989898;
+}
+
+#tabs-navigation.tabs-number-4 li i {
+    width: 25%;
+}
+
+#tabs-navigation.tabs-number-2 li i {
+    width: 50%;
+}
+
+#tabs-navigation.tabs-number-3 li i {
+    width: 33.33%;
+}
+
+#tabs-navigation .active-tab {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}

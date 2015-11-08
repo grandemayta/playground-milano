@@ -1,0 +1,58 @@
+<div id="NamespaceRegistration" class="no-background">
+
+    <div define-area type-area="backbuttonAccess">
+        <div back-button class="backbuttonAccess header-icon-backbutton icon-chevron-left"></div>
+    </div>
+
+    <div class="spacer-80"></div>
+    <h1>Registrati</h1>
+
+    <div class="spacer-20"></div>
+
+    <div class="margin-lateral">
+        <form name="registrationForm" novalidate>
+
+            <input ng-model="user.firstname"
+                   ng-required="true"
+                   type="text"
+                   class="border-top iptxxl"
+                   placeholder="Il tuo nome..."/>
+
+            <input ng-model="user.lastname"
+                   ng-required="true"
+                   type="text"
+                   class="iptxxl"
+                   placeholder="Il tuo cognome..."/>
+            <i class="iptLarge-icon fa fa-user"></i>
+
+            <input ng-model="user.email"
+                   ng-required="true"
+                   type="email"
+                   class="iptxxl"
+                   placeholder="La tua email..."/>
+            <i class="iptLarge-icon fa fa-envelope-o"></i>
+
+            <input ng-model="user.password"
+                   ng-required="true"
+                   type="password"
+                   class="iptxxl"
+                   placeholder="La tua password..."/>
+
+            <input ng-model="user.confirmpassword"
+                   ng-required="true"
+                   type="password"
+                   class="border-bottom iptxxl"
+                   placeholder="Ripeti la password..."/>
+            <i class="iptLarge-icon fa fa-key"></i>
+
+            <div class="spacer-20"></div>
+            <input ng-click="formRegistration($event)"
+                   ng-disabled="!registrationForm.$valid"
+                   type="submit"
+                   class="btn-xxl btn-red"
+                   value="Registrati"/>
+
+            <div class="spacer-20"></div>
+        </form>
+    </div>
+</div>

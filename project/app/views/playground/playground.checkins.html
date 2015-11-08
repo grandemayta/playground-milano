@@ -1,0 +1,62 @@
+<div define-area type-area="withHeaderTabButton" id="NamespaceCheckins" class="withHeaderTabButton scrollable-area">
+
+    <div ng-if="checkinGroupByDate.length > 0" ng-repeat="checkinGroupByDate in checkinsGroupByDate"
+         class="card-group-by-content">
+        <div class="card-group-by-content-left">
+            <div class="icon-calendar card-group-by-content-left-icon"></div>
+            <div ng-bind="checkinGroupByDate[0].date_time_to_go | date: 'dd MMMM yyyy'"
+                 class="card-group-by-content-left-date">
+            </div>
+        </div>
+        <div class="card-group-by-content-right">
+            <div class="card-group-by-content-right-icon icon-contact-2"></div>
+            <div ng-bind="checkinGroupByDate.length" class="card-group-by-content-right-number"></div>
+        </div>
+        <div ng-repeat="checkin in checkinGroupByDate" class="card-three-col">
+            <div ng-if="!checkin.id_user.image"
+                 class="card-three-col-image no-image">
+            </div>
+            <div ng-if="checkin.id_user.image"
+                 style="background-image: url({{checkin.id_user.image}});"
+                 class="card-three-col-image">
+            </div>
+            <div class="card-three-col-icon">
+                <div ng-show="userData.id === checkin.id_user.id"
+                     ng-click="checkinToolbarStatus($event, $parent.$index, $index)"
+                     class="icon-more-option card-three-col-icon-toolbar">
+                </div>
+                <div ng-show="userData.id === checkin.id_user.id && checkin.toolbarStatus"
+                     class="card-three-col-toolbar">
+                    <div ng-click="editMyCheckin(checkin.id)" class="card-three-col-toolbar-label">Modifica</div>
+                    <div ng-click="removeCheckin($event, $parent.$index, $index, checkin.id)"
+                         class="card-three-col-toolbar-label no-margin-bottom">Elimina
+                    </div>
+                </div>
+            </div>
+            <div class="card-three-col-data">
+                <div ng-bind-template="{{checkin.id_user.firstname}} {{checkin.id_user.lastname}}"
+                     class="card-three-col-data-label">
+                </div>
+                <div ng-bind="checkin.date_time_to_go | date: 'H:mm'" class="card-three-col-data-date"></div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-if="checkinsGroupByDate.length === 0">
+        <div class="no-data-content">
+            <div class="no-data-content-icon icon-check-mark-3"></div>
+            <div class="no-data-content-message">
+                vuoi essere il primo a partecipare a questo campo?
+            </div>
+        </div>
+        <div class="spacer-20"></div>
+    </div>
+
+</div>
+
+<button ng-if="IS_AUTH" ng-click="goToCheckin()" class="btn-fixed-bottom btn-playground">
+    Fai checkin
+</button>
+<button ng-if="!IS_AUTH" ui-sref="access.social" class="btn-fixed-bottom btn-playground">
+    Registrati e partecipa
+</button>

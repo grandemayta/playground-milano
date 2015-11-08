@@ -1,0 +1,17 @@
+.idea
+*.apk
+build_android
+build_ios
+node_modules
+bower_components
+project/.idea
+project/public/*.jpg
+project/public/*.png
+project/public/*.gif
+project/public/*.woff
+project/public/*.eot
+project/public/*.svg
+project/public/*.ttf
+project/public/*.json
+project/public/*.js
+project/public/*.css

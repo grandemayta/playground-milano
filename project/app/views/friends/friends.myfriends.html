@@ -1,0 +1,43 @@
+<div id="NamespaceSearchFriends">
+
+    <div ng-show="myfriends.length > 0" class="background-white-01">
+        <div class="spacer-20"></div>
+        <input ng-model="searchFriend" placeholder="Cerca per nome o username" type="text" class="ipt-search"/>
+        <i class="search-friends-icon fa fa-search"></i>
+
+        <div class="spacer-20"></div>
+    </div>
+
+    <div ng-if="myfriends.length > 0"
+         ng-repeat="myfriend in myfriends | filter : searchFriend"
+         ng-class="{'no-border-bottom': $last}"
+         class="listview-three-column">
+        <div class="listview-three-column-image">
+            <figure ng-if="myfriend.image" style="background-image: url('{{myfriend.image}}');" class="header-profile"></figure>
+            <figure ng-if="!myfriend.image" class="header-profile no-image"></figure>
+        </div>
+        <div class="listview-three-column-icon">
+            <i ng-click="removeUser(userData.id, myfriend.id)" class="icon-trash-bin-1"></i>
+        </div>
+        <div class="listview-three-column-content">
+            <span>
+                <b ng-if="myfriend.username" ng-bind="myfriend.username"></b>
+                <p ng-bind="myfriend.fullname"></p>
+            </span>
+        </div>
+    </div>
+
+    <div ng-if="myfriends.length === 0">
+        <div class="no-data-content">
+            <div class="no-data-content-icon icon-contacs"></div>
+            <div class="no-data-content-message">
+                Non hai ancora aggiunto nessun amico
+            </div>
+        </div>
+        <div class="spacer-20"></div>
+        <button ng-click="changeTab(1)" class="btn-playground btn-small">
+            Cerca amici
+        </button>
+    </div>
+
+</div>

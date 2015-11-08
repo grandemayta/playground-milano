@@ -1,0 +1,81 @@
+<div id="full-page" ng-controller="MenuController">
+
+    <header define-area type-area="paddingTopHeader">
+        <i back-button ng-if="toggleBackButton" class="header-icon-arrow icon-chevron-left"></i>
+
+        <div ng-bind="pageTitle" class="titleWidth header-title"></div>
+        <i ng-click="openMenu()" class="header-icon-options icon-more-option"></i>
+
+        <div ng-if="IS_AUTH" class="header-icons-content">
+            <i ng-if="currentPage !== 'friends'" ui-sref="friends" class="header-icons-center icon-contacs"></i>
+            <i ng-if="currentPage !== 'favourites'" ui-sref="favourites"
+               class="header-icons-center icon-heart-small"></i>
+        </div>
+    </header>
+
+    <div ng-show="toggleMenu" class="topMenu header-menu-toolbar">
+        <div ng-if="IS_AUTH" class="header-menu-profile">
+            <div ng-if="userData.image" style="background-image: url('{{userData.image}}');"
+                 class="header-menu-profile-image"></div>
+            <div ng-if="!userData.image" class="no-image header-menu-profile-image"></div>
+            <div ng-if="!userData.username" ng-bind-template="{{userData.firstname}} {{userData.lastname}}"
+                 class="header-menu-profile-fullname"></div>
+            <div ng-if="userData.username" class="header-menu-profile-nickname">
+                @{{userData.username}}
+            </div>
+        </div>
+        <div ng-if="!IS_AUTH" ng-click="menuChangePage($event, 'access.social')" class="header-menu-toolbar-button">
+            Entra con Facebook
+        </div>
+        <div ng-if="!IS_AUTH" ng-click="menuChangePage($event, 'access.registration')"
+             class="header-menu-toolbar-button">
+            Registrati
+        </div>
+        <div ng-if="!IS_AUTH" ng-click="menuChangePage($event, 'access.login')" class="header-menu-toolbar-button">
+            Accedi
+        </div>
+        <div ng-click="menuChangePage($event, 'playgrounds.map')" class="header-menu-toolbar-button">
+            Mappa dei Campi
+        </div>
+        <div ng-click="menuChangePage($event, 'playgrounds.list')" class="header-menu-toolbar-button">
+            Lista dei Campi
+        </div>
+        <div ng-if="IS_AUTH" ng-click="menuChangePage($event, 'friends')" class="header-menu-toolbar-button">
+            Amici
+        </div>
+        <div ng-if="IS_AUTH" ng-click="menuChangePage($event, 'favourites')" class="header-menu-toolbar-button">
+            Preferiti
+        </div>
+        <div ng-click="menuChangePage($event, 'about')" class="header-menu-toolbar-button">
+            Su di Noi
+        </div>
+        <div ng-click="menuChangePage($event, 'faq.home')" class="header-menu-toolbar-button">
+            Domande Frequenti
+        </div>
+        <div ng-click="menuChangePage($event, 'privacy')" class="header-menu-toolbar-button">
+            Privacy
+        </div>
+        <div ng-click="menuChangePage($event, 'credits')" class="header-menu-toolbar-button">
+            Crediti
+        </div>
+        <div ng-if="IS_AUTH" ng-click="logout()" class="header-menu-toolbar-button">
+            Esci
+        </div>
+    </div>
+
+    <ui-view></ui-view>
+
+    <!-- OVERLAY -->
+    <div ng-click="closeMenu()"
+         ng-class="(toggleMenu || toggleSpinner || toggleModal) ? 'open-overlay' : 'close-overlay'"
+         class="overlay">
+    </div>
+
+    <!--SPINNER-->
+    <spinner ng-if="toggleSpinner"></spinner>
+
+    <!-- MODAL -->
+    <modal ng-class="toggleModal ? 'open-modal' : 'close-modal'"></modal>
+
+</div>
+

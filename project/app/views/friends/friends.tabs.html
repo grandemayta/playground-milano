@@ -1,0 +1,18 @@
+<tabs class="swiper-container">
+    <!-- TAB NAVIGATION -->
+    <ul id="tabs-navigation" class="tabs-number-2">
+        <li><i ng-click="changeTab(0)" class="active-tab icon-contacs"></i></li>
+        <li><i ng-click="changeTab(1)" class="icon-contact-add-2"></i></li>
+    </ul>
+    <!-- TAB CONTENT -->
+    <div class="swiper-wrapper">
+        <!-- TAB1 -->
+        <div class="swiper-slide">
+            <load-template url="../views/friends/friends.myfriends.html"></load-template>
+        </div>
+        <!-- TAB2 -->
+        <div class="swiper-slide">
+            <load-template url="../views/friends/friends.newfriends.html"></load-template>
+        </div>
+    </div>
+</tabs>

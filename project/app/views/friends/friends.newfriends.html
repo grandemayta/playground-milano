@@ -1,0 +1,31 @@
+<div id="NamespaceSearchFriends">
+
+    <div class="background-white-01">
+        <div class="spacer-20"></div>
+        <input ng-keyup="searchFriends(userData.id, friendsSearched)"
+               ng-model="friendsSearched"
+               placeholder="Cerca per nome o email"
+               type="text"
+               class="ipt-search"/>
+        <i class="search-friends-icon fa fa-search"></i>
+
+        <div class="spacer-20"></div>
+    </div>
+
+    <div ng-if="newFriends.length > 0" ng-repeat="newFriend in newFriends" ng-class="{'no-border-bottom': $last}" class="listview-three-column">
+        <div class="listview-three-column-image">
+            <figure ng-if="newFriend.image" style="background-image: url('{{newFriend.image}}');" class="header-profile"></figure>
+            <figure ng-if="!newFriend.image" class="header-profile no-image"></figure>
+        </div>
+        <div id="friend_{{$index}}" class="listview-three-column-icon">
+            <i ng-click="addFriend(userData.id, newFriend, 'friend_' + $index)" class="icon-contact-add-2"></i>
+        </div>
+        <div class="listview-three-column-content">
+            <span>
+                <b ng-if="newFriend.username" ng-bind="newFriend.username"></b>
+                <p ng-bind-template="{{newFriend.firstname}} {{newFriend.lastname}}"></p>
+            </span>
+        </div>
+    </div>
+
+</div>

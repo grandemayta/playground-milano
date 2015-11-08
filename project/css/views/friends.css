@@ -1,0 +1,100 @@
+.ipt-search {
+    clear: left;
+    float: left;
+    width: 94%;
+    height: 40px;
+    margin: 0 3%;
+    padding: 0 10px;
+    color: #686868;
+    font-size: 16px;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 0 3px #d0d0d0;
+}
+
+#NamespaceSearchFriends .search-friends-icon {
+    position: relative;
+    clear: left;
+    float: right;
+    margin-top: -32px;
+    margin-right: 20px;
+    font-size: 22px;
+    color: #989898;
+}
+
+.listview-three-column {
+    clear: left;
+    float: left;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid #d0d0d0;
+    overflow: hidden;
+}
+
+.listview-three-column-image {
+    clear: left;
+    float: left;
+    width: 70px;
+    height: 100%;
+}
+
+.listview-three-column-content {
+    display: table;
+    height: 100%;
+    overflow: auto;
+}
+
+.listview-three-column-icon {
+    display: table;
+    float: right;
+    width: 44px;
+    height: 100%;
+}
+
+.listview-three-column-image figure {
+    clear: left;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: #d0d0d0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.listview-three-column-content span {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.listview-three-column-content span b {
+    clear: left;
+    float: left;
+    color: #280a50;
+    font-size: 16px;
+    font-family: 'robotobold';
+}
+
+.listview-three-column-content span p {
+    clear: left;
+    float: left;
+}
+
+.listview-three-column-icon i {
+    display: block;
+    width: 50px;
+    height: 28px;
+    margin-top: 26px;
+    margin-right: 10px;
+    padding-top: 4px;
+    text-align: center;
+    font-size: 18px;
+    color: #280a50;
+    border: 1px solid #280a50;
+    border-radius: 2px;
+}

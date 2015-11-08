@@ -1,0 +1,48 @@
+<div class="scrollable-area" style="height: {{DEVICE.withHeaderButton}}px;">
+
+    <div style="background-image: url('{{playground.image}}');" class="card-checkin-playground-image">
+        <div ng-bind="playground.name" class="card-checkin-playground-name"></div>
+    </div>
+    <div class="margin-lateral">
+
+        <div class="spacer-20"></div>
+        <div class="ttl-alternative-title">Seleziona la data:</div>
+        <div class="spacer-10"></div>
+        <input type="text"
+               ng-model="dateFrom"
+               show-button-bar="false"
+               is-open="opened"
+               min-date="minDate"
+               datepicker-options="{showWeeks:false, startingDay: 1}"
+               datepicker-popup="{{dateFormat}}"
+               ng-required="true"
+               ng-readonly="true"
+               class="ipt-datepicker"/>
+
+        <div ng-click="openDatepicker()" class="datepicker-over-open icon-calendar"></div>
+
+        <div class="spacer-20"></div>
+        <div class="ttl-alternative-title">Seleziona l'ora:</div>
+        <div class="spacer-10"></div>
+        <div class="select-time-arrow icon-chevron-down"></div>
+        <select ng-model="hours" class="select-time">
+            <option ng-repeat="i in getNumber(24) track by $index"
+                    ng-selected="$index===hours"
+                    value="{{$index > 9 ? $index : '0'+$index}}">
+                {{$index > 9 ? $index : '0'+$index}}
+            </option>
+        </select>
+        <div class="select-time-arrow icon-chevron-down"></div>
+        <select ng-model="minutes" class="select-time">
+            <option ng-repeat="i in getNumber(60) track by $index"
+                    ng-selected="$index===minutes"
+                    value="{{$index > 9 ? $index : '0'+$index}}">
+                {{$index > 9 ? $index : '0'+$index}}
+            </option>
+        </select>
+
+        <div class="spacer-20"></div>
+
+    </div>
+</div>
+<button ng-click="checkinSelected($event)" class="btn-fixed-bottom btn-playground">Conferma</button>

@@ -1,0 +1,68 @@
+.header-menu-toolbar {
+    position: absolute;
+    z-index: 220;
+    right: 10px;
+    width: 200px;
+    background: #f0f0f0;
+}
+
+.header-menu-toolbar-button {
+    clear: left;
+    float: left;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px;
+}
+
+.header-menu-profile {
+    clear: left;
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+    background: #280a50;
+}
+
+.header-menu-profile-image {
+    position: relative;
+    left: 50%;
+    clear: left;
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: -40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.header-menu-profile-fullname, .header-menu-profile-nickname {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    z-index: -80;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.0);
+}
+
+.open-overlay {
+    z-index: 110 !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+}
+
+.close-overlay {
+    background: rgba(0, 0, 0, 0.0) !important;
+}

@@ -1,0 +1,26 @@
+<div id="NamespacePlayground">
+
+    <figure style="background-image: url('{{playground.image}}');"
+            ng-class="{'no-background-image': !playground.image}">
+        <div ng-if="IS_AUTH" class="figure-item-content">
+            <i ng-click="toggleFavourites()" ng-class="{'favourites':favourites}"
+               class="playground-bookmarks icon-heart-small">
+            </i>
+        </div>
+    </figure>
+
+    <div class="margin-lateral">
+
+        <div class="spacer-10"></div>
+        <h2 class="ttl-main-title" ng-bind="playground.name"></h2>
+
+        <div class="spacer-10"></div>
+        <p ng-if="playground.description" ng-bind="playground.description" class="txt-justify"></p>
+
+        <p ng-if="!playground.description" class="txt-justify">
+            Non è stata ancora scritta una recensione per questo campo.
+        </p>
+
+        <div class="spacer-20"></div>
+    </div>
+</div>
