@@ -22,13 +22,13 @@
 <h2>Articles about the project</h2>
 <ul>
 <li>
-<a href="http://milano.repubblica.it/cronaca/2015/06/22/foto/playground-117440499/1/#2">Repubblica</a>
+<a target="_blank" href="http://milano.repubblica.it/cronaca/2015/06/22/foto/playground-117440499/1/#2">Repubblica</a>
 </li>
 <li>
-<a href="http://www.leggo.it/NEWS/MILANO/milano_basket_playground_app/notizie/1424698.shtml">Leggo</a>
+<a target="_blank" href="http://www.leggo.it/NEWS/MILANO/milano_basket_playground_app/notizie/1424698.shtml">Leggo</a>
 </li>
 <li>
-<a href="http://www.ilfattoquotidiano.it/2015/07/09/milano-il-playground-piu-vicino-per-giocare-a-basket-ora-te-lo-dice-una-app/1847400/">Il Fatto quotidiano</a>
+<a target="_blank" href="http://www.ilfattoquotidiano.it/2015/07/09/milano-il-playground-piu-vicino-per-giocare-a-basket-ora-te-lo-dice-una-app/1847400/">Il Fatto quotidiano</a>
 </li>
 </ul>
 </p>
