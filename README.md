@@ -1,4 +1,4 @@
-# playground-milano
+# Playground Milano
 
 <p align="center">
 <img src="https://cloud.githubusercontent.com/assets/6887120/11020970/13b8f81e-8632-11e5-81a1-a5fd190089bc.png" width=200 />
